@@ -15,6 +15,13 @@ mat-toolbar {
         cursor: pointer;
       }
 
+      .image-wrapper {
+        padding: 16px;
+        img {
+          border-radius: 8px;
+        }
+      }
+
       mat-card-content {
         color: rgba(0, 0, 0, 0.54);
       }
