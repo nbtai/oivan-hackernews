@@ -1,0 +1,12 @@
+<ul class="pagination" *ngIf="totalPages >1">
+  <li class="page-item previous" [ngClass]="currentPage == 1 ? 'disabled' : ''">
+    <span class="page-link" (click)="previousPage()">Previous</span>
+  </li>
+
+  <li class="page-item" *ngFor="let item of displayablePages" [ngClass]="(currentPage == item) ? 'active' : ''">
+    <span class="page-link" (click)="goToPage(item)">{{item}}</span>
+  </li>
+  <li class="page-item next" [ngClass]="currentPage == totalPages ? 'disabled' : ''">
+    <span class="page-link" (click)="nextPage()">Next</span>
+  </li>
+</ul>

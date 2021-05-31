@@ -1,0 +1,23 @@
+mat-toolbar {
+  justify-content: space-between;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content {
+  a {
+    text-decoration: none;
+    mat-card {
+      margin-bottom: 16px;
+      :hover {
+        cursor: pointer;
+      }
+
+      mat-card-content {
+        color: rgba(0, 0, 0, 0.54);
+      }
+    }
+  }
+}
