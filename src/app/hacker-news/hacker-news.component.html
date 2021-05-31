@@ -8,7 +8,9 @@
             <mat-card-title>{{article.title}}</mat-card-title>
             <mat-card-subtitle>{{article.subtitle}}</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image src="{{article.coverImageUrl || '/assets/images/default-image.jpeg'}}">
+          <div class="image-wrapper">
+            <img mat-card-image src="{{article.coverImageUrl || './assets/images/default-image.jpeg'}}">
+          </div>
           <mat-card-content>
             <p>
               {{article.description}}
