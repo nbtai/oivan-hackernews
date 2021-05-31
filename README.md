@@ -6,9 +6,9 @@ The purpose of the project is to upgrade the ability for reading the best news, 
 ## Sitemap
 **Here are listing page by routing**
 
-`1. /: The default home page`
-`2. /best?page={pageNumber}: Explore the articles`
-`3. /article?url={url_to_detail}: Go to detail page of the article`
+- `/`: The default home page
+- `/best?page={pageNumber}`: Explore the articles
+- `/article?url={url_to_detail}`: Go to detail page of the article
 
 ## Development server
 
