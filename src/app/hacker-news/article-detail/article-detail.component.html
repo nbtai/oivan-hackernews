@@ -7,9 +7,12 @@
           <mat-card-title>{{article.title}}</mat-card-title>
           <mat-card-subtitle>{{article.subtitle}}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="{{article.coverImageUrl || './assets/images/default-image.jpeg'}}">
+        <div class="">
+          <img mat-card-image title="{{article.title}}" src="{{article.coverImageUrl || './assets/images/default-image.jpeg'}}">
+        </div>
         <mat-card-content>
           <div class="e2e-inner-html-bound" [innerHTML]="article.content"></div>
+          <p class="cl-source">Source: <a href="{{article.url}}">{{article.url}}</a></p>
         </mat-card-content>
         <mat-card-actions>
           <div fxFlex></div>
