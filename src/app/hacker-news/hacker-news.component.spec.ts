@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HackerNewsComponent } from './hacker-news.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('HackerNewsComponent', () => {
   let component: HackerNewsComponent;
@@ -8,7 +10,8 @@ describe('HackerNewsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HackerNewsComponent ]
+      declarations: [ HackerNewsComponent ],
+      imports: [ HttpClientTestingModule, RouterTestingModule ],
     })
     .compileComponents();
   });

@@ -1,6 +1,6 @@
 <hacker-news-loading [isLoading]="isLoading"></hacker-news-loading>
 <div class="content">
-  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid" tid="content-wrapper">
     <div fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let article of articles">
       <a routerLink="/article" [queryParams]="{url: article.url}">
         <mat-card class="mat-elevation-z4">
